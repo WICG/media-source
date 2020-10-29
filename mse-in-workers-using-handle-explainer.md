@@ -1,6 +1,6 @@
 # Media Source Extensions: MSE-in-Workers Explainer
 
-###### Author: Matthew Wolenetz, [Google Inc.](www.google.com) - December 17, 2018.  Last update June 5, 2020.
+###### Author: Matthew Wolenetz, [Google Inc.](www.google.com) - December 17, 2018.  Last update October 29, 2020.
 
 Please note this updated version no longer adds a `MediaSourceHandle` object.
 This updated version also is limited to expanding MSE usage beyond the main
@@ -27,11 +27,16 @@ version of MSE.
 
 ### Implementation status as of last update
 
-* Chrome - prototyping underway.
+* Chrome - implemented behind experimental flag as of 88.0.4300.0
 * Firefox - interest expressed in F2Fs.
 * Safari Technical Preview - interest expressed in F2Fs.
 * Current experimental web-platform-test results:
   * Pending further prototyping, etc.
+
+### Demo of Usage to Avoid "Buffering Jank" When There's Main Thread Contention
+
+* See [the demo source and instructions](https://github.com/wolenetz/mse-in-workers-demo) in its
+  repository.
 
 ## Background
 
